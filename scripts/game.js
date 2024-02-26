@@ -67,7 +67,7 @@ function playerTurn() {
             addTurn();
         }
     } else {
-        alert("Wrong move!");
+        alert("Wrong Move!");
         newGame();
     }
 }
