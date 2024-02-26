@@ -2,7 +2,9 @@
  * @jest-environment jsdom
  */
 
+const { default: test } = require("node:test");
 const { game } = require("../game");
+const { expect } = require("@jest/globals");
 
 
 beforeAll(() => {
@@ -20,4 +22,11 @@ describe("game object contains correct keys", () => {
     test("currentGame key exists", () => {
         expect("currentGame" in game).toBe(true);
     });
+    test("playerMoves key exists", () => {
+        expect("playerMoves" in game).toBe(true);
+    });
+    test("choices key exists", () => {
+        expect("choices" in game).toBe(true);
+    });
+
 });
