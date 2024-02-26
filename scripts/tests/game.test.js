@@ -3,7 +3,7 @@
  */
 
 
-const { game, newGame, showScore, addTurn, lightsOn, showTurns } = require("../game");
+const { game, newGame, showScore, addTurn, lightsOn, showTurns, playerTurn } = require("../game");
 
 
 
